@@ -15,10 +15,12 @@
 @interface DataBaseViewController : UIViewController{
     UITextView *dataAView;
     UITextView *dataGView;
+    UIButton *updateButton;
 }
 
 @property (nonatomic, retain) IBOutlet UITextView *dataAView;
 @property (nonatomic, retain) IBOutlet UITextView *dataGView;
+@property (nonatomic, retain) IBOutlet UIButton *updateButton;
 
 - (IBAction)updateButtonPressed:(id)sender;
 

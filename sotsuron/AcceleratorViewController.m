@@ -179,6 +179,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    AXLabel.text = nil;
+    AYLabel.text = nil;
+    AZLabel.text = nil;
+    GXLabel.text = nil;
+    GYLabel.text = nil;
+    GZLabel.text = nil;
+    stopButton.hidden = YES;
 }
 
 - (void)viewDidUnload
@@ -191,6 +198,7 @@
     self.GYLabel = nil;
     self.GZLabel = nil;
     self.accelerButton = nil;
+    self.stopButton = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

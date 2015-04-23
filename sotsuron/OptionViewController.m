@@ -83,6 +83,10 @@
     accelerupdate_sign = 0.1;
     extern float gyroupdate_sign;
     gyroupdate_sign = 0.1;
+    accuracySlider.text = nil;
+    accelerSlider.text = @"+0.50";
+    gyroSlider.text = @"+0.50";
+    
 }
 
 - (void)viewDidUnload

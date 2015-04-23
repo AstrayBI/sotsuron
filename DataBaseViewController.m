@@ -17,6 +17,7 @@
 @implementation DataBaseViewController
 @synthesize dataAView;
 @synthesize dataGView;
+@synthesize updateButton;
 
 - (NSString *)dataFileAPath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -127,10 +128,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    dataAView.text = @"";
+    dataGView.text = @"";
 }
 
 - (void)viewDidUnload
 {
+    self.dataAView = nil;
+    self.dataGView = nil;
+    self.updateButton = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -140,6 +146,7 @@
 {
     [dataAView release];
     [dataGView release];
+    [updateButton release];
     [super dealloc];
 }
 
